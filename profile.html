@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Mmakema Profile</title>
         <Link rel="stylesheet" href="profil.css">
         
@@ -8,6 +9,13 @@
     <body>
 
     <div class="header">
+
+      <!--<div class="weather">
+            <h1>Live Weather Forecast</h1>
+            <div id="weather">Loading...</div>
+            <script src="script.js"></script>
+        </div> -->
+
     <h1 class="myname">Mmakema Gladys Mokoana</h1>
     <p class="dive">Software Development <br>Learner</p>
     </div>
@@ -15,23 +23,25 @@
     <div class="sectbody">
         <div class="navigation">
             <nav>
-                <p class="navw">About</p>
-                <p class="navw">Education </p>
-                <p class="navw">Skills</p>
-                <p class="navw">Outside Work</p>
+                <a href="about.html"> <p class="navw">About</p> </a>
+                <a href="education.html"> <p class="navw">Education </p> </a>
+                <a href="skills.html" > <p class="navw">Skills</p> </a>
+                <a href="outside.html"> <p class="navw">Outside Work</p></a>
             </nav>
         </div>
 
         <div class="midpart">
 
+            <p>Welcome <br> To My <br>Profile</p>
+
         </div>
 
         <div class="mphele">
             <div clss="kemsimage">
-                <img src= "Mmakema.jpg"  alt="Mmakema's picture" width="280" height="350">
+                <img src= "Mmakema.jpg"  alt="Mmakema's picture"  class="styled">
             </div>
             <div class="mantra">
-                <p>Personal Mantra</p>
+                <p><u>Personal Mantra </u></p>
                 <p>Open imagination is the mother <br>
                     of all innovation; free your imagination!<br><br>
                     -Mmakema
@@ -52,6 +62,8 @@
         <div class="icons2">
 
         </div>
+
+        <script src="weather.js"></script>
 
     </div>
 
