@@ -36,4 +36,24 @@ if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoError);
 } else {
     weatherElement.innerHTML = 'Geolocation is not supported by this browser.';
+
 }
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slideshow = document.querySelector('.slides');
+    const container = document.getElementById('slideshow');
+    let isPaused = false;
+  
+    container.addEventListener('click', () => {
+      if (isPaused) {
+        slideshow.style.animationPlayState = 'running';
+      } else {
+        slideshow.style.animationPlayState = 'paused';
+      }
+      isPaused = !isPaused;
+    });
+  });

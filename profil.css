@@ -45,21 +45,56 @@ a {
     transform: scale(1.1);
 }
 
+
+
+.midpartmom{
+    overflow: hidden;
+}
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px); /* Slide in from above */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at its original position */
+    }
+  }
+  
+  @keyframes continuousMovement {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-40%); /* Move left over time */
+    }
+  }
+
+
+
+
 .midpart{
     font-size: 100px;
     color:rgb(255, 145, 0);
     text-align: center;
-    margin-left: 130px;
+    margin-left: 200px;
     margin-right: 200px;
+
+    position: absolute;
+    animation: slideIn 2s ease-out, continuousMovement 10s linear infinite;
 }
 
 .mphele{
     width: 300px;
     height: 470px;
     margin-top: 50px;
+    margin-left: 700px;
     background-color:rgba(119, 119, 119, 0.244);
     justify-content: flex-end;
-    border-radius: 15px;}
+    border-radius: 15px;
+    }
+
 
 
 .styled {
@@ -110,9 +145,9 @@ a {
     font-size: 35px;
     text-shadow:  8px 8px 8px rgb(255, 255, 255);
     background-image: url("chess.jpg");
-    background-size: cover; /* Scale the image to cover the entire element */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -130,3 +165,145 @@ a {
     font-size: 60px;
     color: rgb(255, 145, 0);
  }
+
+
+
+
+ /* styling the about.html*/
+
+.sect1container{
+    background-color: rgb(253, 253, 201);
+    height:480px;
+    justify-content: center;
+}
+.sect1abt{
+    text-align: center;
+    font-size: 30px;
+    background-image: url(backgrabout.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 400px; ;
+    margin-left: 10%;
+    margin-top: 0px;
+    margin-top: 0px;
+}
+
+.sect2baby{
+    text-align: center;
+    display: flex;
+}
+.horizontalwords{
+    font-size: 40px;
+    margin-left: 100px;
+}
+.backgrpara{
+    font-size: 35px;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 100px;
+
+}
+
+.sect3abt{
+    background-color: beige;
+    text-align: center;
+    font-size: 40px;
+}
+
+.slideshow-container {
+    width: 50%;
+    overflow: hidden;
+    padding-left: 50%;
+    padding-bottom: 100px;
+    margin: 100px;
+    background-color: beige;
+
+  }
+  
+  .slideshow {
+    display: flex;
+    width: 300%; /* 100% per image */
+    animation: slide 22s linear infinite;
+    transition: animation 0.5s ease-in-out;
+  }
+  
+  .slideshow img {
+    width: auto; /* Adjust based on number of images */
+    height: 400px;
+    margin-left: 50px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    33.3333% {
+      transform: translateX(-100%);
+    }
+    66.6666% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
+
+
+
+/* styling skills.html */
+
+.langs{
+    display: flex;
+}
+.redcode{
+    font-size: 50px;
+    color: red;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.themlangs{
+    font-size: 35px;
+    margin-left: 150px;
+}
+.snepe{
+    margin-left: 480px;
+    margin-top: 50px;
+}
+.actualsnepe{
+    width: 400px;
+}
+
+.lowersect{
+    width: 100%;
+}
+
+.lineA{
+    width: 800px;
+    font-size: 60px;
+    color: rgb(255, 145, 0);
+    margin-top: 50px;
+}
+
+.lineB{
+    width: 800px;
+    font-size: 60px;
+    color: rgb(255, 145, 0);
+    margin-top: 5%;
+    margin-bottom: 50px;
+    margin-left: 230px;
+}
+
+.softskills{
+    font-size: 40px;
+    margin-left: 250px;
+}
+
+
+
+
+
+
+/* styling education.html*/
