@@ -57,3 +57,23 @@ document.addEventListener('DOMContentLoaded', () => {
       isPaused = !isPaused;
     });
   });
+
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const sideNav = document.getElementById('sideNav');
+    const content = document.querySelector('.content');
+
+    hamburgerMenu.addEventListener('click', function() {
+        if (sideNav.style.left === '0px') {
+            sideNav.style.left = '-250px';
+            content.style.marginLeft = '0';
+        } else {
+            sideNav.style.left = '0';
+            content.style.marginLeft = '250px';
+        }
+    });
+});
