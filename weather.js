@@ -77,3 +77,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// script.js
+
+// Get the button element
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+// Show or hide the button based on scroll position
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
+
+// Scroll to the top of the page when the button is clicked
+scrollToTopBtn.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+});
