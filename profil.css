@@ -355,3 +355,32 @@ a {
 
 
 /* styling education.html*/
+.sect1edu{
+    display: flex;
+    font-size: 60px;
+    text-align: center;
+    margin-left: 400px;
+
+}
+.lebone{
+    height: 120px;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+.sectedu{
+    display: flex;
+    background-color: beige;
+}
+.qual{
+    text-align: left;
+    font-size: 35px;
+    margin-left: 150px
+    ;
+}
+.graduation{
+    width: 400px;
+    margin-left: 400px;
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
