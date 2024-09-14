@@ -59,7 +59,7 @@ body {
 }
 
 .midpart {
-    font-size: 5.5em;
+    font-size: 5em;
     color: rgb(255, 145, 0);
     margin: 20px auto;
     margin-left: 20%;
@@ -68,9 +68,9 @@ body {
 
 .mphele {
     width: 90%;
-    max-width: 17%;
+    max-width: 300px;
     height: auto;
-    margin: auto;
+    margin: 20px auto;
     background-color: rgba(119, 119, 119, 0.244);
     border-radius: 15px;
     text-align: center;
@@ -160,25 +160,25 @@ body {
 /* styling outside.html */
 .menu{
     height: 50px;
-    margin-left: 30px;
+    margin: 5px;
 }
 .sect1out{
     display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .hlogo {
-    font-size: 50px;
+    font-size: 3em;
     margin-left: 350px;
 }
 .ntl{
-    font-size: 35px;
-    margin-left: 300px;
-    margin-right: 200px;
+    font-size: 2.5em;
     text-align: center;
 }
 
 .kemi{
-    width: 380px;
+    width: 45%;
    margin-top: 70px;
    border-radius: 15px;
     
