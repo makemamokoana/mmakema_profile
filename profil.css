@@ -15,6 +15,7 @@ body {
     height: 16%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
+    width: 100%;
 }
 
 .myname {
@@ -109,17 +110,14 @@ a{
 .formbox .myname{
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 2%;
-    margin: 2%;
-}
-.formbox{
-    margin-bottom: 5%;
+
 }
 
 .form{
     text-align: center;
     font-size: 1.2em;
     margin-bottom: 5%;
+    padding: 5%;
 }
 .form input[type="text"],
 .form input[type="email"],
@@ -202,58 +200,196 @@ a{
 
 
 /* styling outside.html */
-.menu{
-    height: 50px;
-    margin: 5px;
-}
-.sect1out{
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; 
+    background-color: beige;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
-    align-content: center;
+    align-items: center;
+    padding: 0 2%; 
+    box-sizing: border-box;
+    flex-wrap: wrap; 
+}
+
+.homeicon {
+    height: 50px;
+}
+
+.menulinks {
+    font-size: 1.4em; /* Smaller font size for better fit on smaller screens */
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+    color: rgb(255, 145, 0);
+    white-space: nowrap;
+}
+
+.sect1out {
+    display: flex;
+    flex-direction: auto ;
+    align-items: center;
     justify-content: center;
+    gap: 15%;
+    padding: 4%;
 }
 
 .hlogo {
-    font-size: 3em;
-    margin-left: 350px;
-}
-.ntl{
-    font-size: 2.5em;
+    font-size: 2em; 
     text-align: center;
 }
 
-.kemi{
-    width: 45%;
-   margin-top: 70px;
-   border-radius: 15px;
-    
+.ntl {
+    font-size: 1.7em; 
+    text-align: center;
+    margin: 0;
 }
 
-.sect2out{
-    margin-top: 100px;
+.kemi {
+    width: 60%; 
+    max-width: 500px;
+    border-radius: 15px;
+    margin-left: 30%;
+   
+}
+
+/* Section 2 Styles */
+.sect2out {
     text-align: center;
-    font-size: 35px;
-    text-shadow:  8px 8px 8px rgb(255, 255, 255);
+    font-size: 1.5em; /* Adjusted for better readability on smaller screens */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background-image: url("chess.jpg");
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
-    padding-top: 50px;
-    padding-bottom: 50px;
-
+    background-repeat: no-repeat;
+    padding: 30px 10px; /* Adjusted padding for better spacing on smaller screens */
+    color: #fff;
 }
 
-.botho{
+/* Footer Styles */
+.botho {
     display: flex;
-    font-size: 40px;
+    flex-direction: column; /* Ensures vertical stacking on smaller screens */
+    font-size: 1.5em; /* Adjusted for better readability on smaller screens */
     text-align: center;
-    margin-left: 32%;
+    margin: 20px auto;
     color: rgb(255, 145, 0);
 }
- .line{
+
+.line {
     text-align: center;
-    font-size: 60px;
+    font-size: 2em; /* Adjusted for consistency */
     color: rgb(255, 145, 0);
- }
+}
+
+/* Scroll-to-Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .menulinks {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menulinks {
+        margin-left: 0;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .homeicon {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hlogo {
+        font-size: 1.5em;
+    }
+
+    .ntl {
+        font-size: 1.2em;
+    }
+
+    .kemi {
+        width: 100%;
+    }
+
+    .sect2out {
+        font-size: 1.2em;
+        padding: 20px 5px;
+    }
+
+    .botho {
+        font-size: 1.2em;
+    }
+
+    .line {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu {
+        padding: 0 5%;
+    }
+
+    .menulinks {
+        font-size: 1em;
+        gap: 5px;
+    }
+
+    .homeicon {
+        height: 40px;
+    }
+
+    .hlogo {
+        font-size: 1.2em;
+    }
+
+    .ntl {
+        font-size: 1em;
+    }
+
+    .sect2out {
+        font-size: 1em;
+        padding: 15px 5px;
+    }
+
+    .botho {
+        font-size: 1em;
+    }
+
+    .line {
+        font-size: 1.2em;
+    }
+}
 
 
 
@@ -262,7 +398,7 @@ a{
 
 .sect1container{
     background-color: rgb(253, 253, 201);
-    height:480px;
+    max-height: 600px;
     justify-content: center;
 }
 .sect1abt{
@@ -275,8 +411,7 @@ a{
     width: 80%;
     height: 400px; ;
     margin-left: 10%;
-    margin-top: 0px;
-    margin-top: 0px;
+    margin-top: 7%;
 }
 
 .sect2baby{
@@ -392,40 +527,6 @@ a{
     margin-left: 250px;
 }
 
-/* Styles for the sliding navigation menu */
-.side-nav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: -250px; /* Hide menu off-screen */
-    background-color: #333;
-    overflow-x: hidden;
-    transition: 0.3s; /* Smooth transition */
-    padding-top: 60px;
-    z-index: 999;
-}
-
-.side-nav a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-    transition: 0.3s;
-}
-
-.side-nav a:hover {
-    background-color: #575757;
-}
-
-/* Styles for content to shift when menu is open */
-.content {
-    transition: margin-left 0.3s; /* Smooth transition */
-    padding: 16px;
-}
-
-
 
 
 /* styling education.html*/
@@ -434,6 +535,7 @@ a{
     font-size: 60px;
     text-align: center;
     margin-left: 400px;
+    margin-top: 5%;
 
 }
 .lebone{
@@ -462,20 +564,20 @@ a{
 
 .scroll-to-top {
     position: fixed;
-    bottom: 20px; /* Adjust distance from bottom */
-    right: 20px; /* Adjust distance from right */
-    background-color: #333; /* Button background color */
-    color: white; /* Text color */
-    padding: 10px 15px; /* Padding around the text */
-    border-radius: 50%; /* Rounded button */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Font size for the arrow */
-    display: none; /* Initially hidden */
+    bottom: 20px;
+    right: 20px; 
+    background-color: #333;
+    color: white; 
+    padding: 10px 15px;
+    border-radius: 50%; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 20px; 
+    display: none;
 }
 
 .scroll-to-top:hover {
-    background-color: #555; /* Button background color on hover */
+    background-color: #555; 
     margin-bottom: 0px;
 }
 
