@@ -33,6 +33,7 @@ body {
     flex-wrap: wrap; /* Allows wrapping of child elements */
     justify-content: space-between;
     padding: 0%;
+    width: 95%;
 }
 
 .navigation {
@@ -62,13 +63,13 @@ body {
     font-size: 5em;
     color: rgb(255, 145, 0);
     margin: 20px auto;
-    margin-left: 20%;
+    margin-left: 18%;
     animation: slideIn 2s ease-out, continuousMovement 6s linear infinite;
 }
 
 .mphele {
     width: 90%;
-    max-width: 300px;
+    max-width: 280px;
     height: auto;
     margin: 20px auto;
     background-color: rgba(119, 119, 119, 0.244);
@@ -103,6 +104,17 @@ body {
 
 .form{
     text-align: center;
+    font-size: 1.2em;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: 100%; 
+    max-width: 40%;
+    box-sizing: border-box;
+}
+.form textarea {
+    resize: vertical;
 }
 
 /* Footer */
@@ -111,7 +123,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 200, 0, 0.6);
-    width: 100%;
+    width: 98%;
     height: auto;
     padding: 1%;
 }
