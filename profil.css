@@ -88,6 +88,23 @@ body {
     text-align: center;
 }
 
+.formbox{
+    width:90%;
+    margin: 5%;
+    box-shadow: 4px 4px 8px rgba(0.3, 0.3, 0.3, 0.3);
+    background-color: rgba(255, 228, 196, 0.367);
+    border-radius: 12px;
+ 
+}
+.contactme{
+    text-align: center;
+    font-size: 5em;
+}
+
+.form{
+    text-align: center;
+}
+
 /* Footer */
 .footer {
     display: flex;
