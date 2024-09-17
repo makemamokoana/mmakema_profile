@@ -43,7 +43,7 @@ body {
 
 .navw {
     margin: 10% 0;
-    background-color: rgba(119, 119, 119, 0.244);
+    background-color: rgba(119, 119, 119, 0.082);
     font-size: 2.5em;
     padding: 4%;
     border-radius: 0 20px 20px 0;
@@ -214,6 +214,7 @@ a{
     padding: 0 2%; 
     box-sizing: border-box;
     flex-wrap: wrap; 
+
 }
 
 .homeicon {
@@ -230,12 +231,15 @@ a{
 }
 
 .sect1out {
+    width: 99%;
+    margin-top: 7%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: auto ;
     align-items: center;
     justify-content: center;
     gap: 15%;
-    padding: 4%;
+
 }
 
 .hlogo {
@@ -259,6 +263,7 @@ a{
 
 /* Section 2 Styles */
 .sect2out {
+    width: 97%;
     text-align: center;
     font-size: 1.5em; /* Adjusted for better readability on smaller screens */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -272,17 +277,18 @@ a{
 
 /* Footer Styles */
 .botho {
+    width: 100%;
     display: flex;
-    flex-direction: column; /* Ensures vertical stacking on smaller screens */
-    font-size: 1.5em; /* Adjusted for better readability on smaller screens */
+    font-size: 1.7em; /* Adjusted for better readability on smaller screens */
     text-align: center;
-    margin: 20px auto;
     color: rgb(255, 145, 0);
+    gap: 13%;
+    margin-left: 25%;
 }
 
 .line {
     text-align: center;
-    font-size: 2em; /* Adjusted for consistency */
+    font-size: 2em; 
     color: rgb(255, 145, 0);
 }
 
