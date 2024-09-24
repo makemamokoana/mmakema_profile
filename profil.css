@@ -49,6 +49,12 @@ body {
     border-radius: 0 20px 20px 0;
     text-align: center;
 }
+
+.menu a:hover {
+    color: rgb(255, 0, 0); 
+    text-decoration: underline;
+    transform: scale(1.1); /* Zoom effect */
+}
 a{
     text-decoration: none;
     color: inherit;
