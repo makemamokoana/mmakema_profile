@@ -137,6 +137,18 @@ a{
 }
 
 /* Footer */
+
+.footer_tit {
+    display: flex;
+    background-color: rgba(255, 200, 0, 0.6);
+    text-align: center;
+    text-decoration: underline;
+    justify-content: space-between;
+    font-size: 1.7em;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 0;
+}
 .footer {
     display: flex;
     justify-content: space-between;
@@ -145,10 +157,11 @@ a{
     width: 98%;
     height: auto;
     padding: 1%;
+    margin-top: 0;
 }
 
 .linkin {
-    width: 15%;
+    width: 20%;
 }
 
 .weather {
@@ -156,7 +169,7 @@ a{
 }
 
 .contacts {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 /* Keyframes */
