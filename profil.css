@@ -573,6 +573,18 @@ a{
     display: flex;
     background-color: beige;
 }
+
+.achievements{
+    margin: 1%;
+    padding: 2%;
+    background-color: beige;
+    text-align: center;
+}
+.ach1{
+    text-decoration: underline;
+    font-size: 2em;
+}
+
 .qual{
     text-align: left;
     font-size: 35px;
